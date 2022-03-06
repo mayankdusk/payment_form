@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+         
+        body{
+            padding: 8px;
+            margin:10px 15px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size:20px;
+        } 
+
+        .container{
+            font-size:10px;
+            padding:10px 20px 10px 20px;
+            margin: 15px;
+            border: 2px solid black;
+            background-color: lightcyan;
+            border-radius:5px;
+        }
+
+        h1{
+            background-color:azure;
+            text-align: center;
+            padding:20px;
+            margin:15px;
+            font-size: 25px;
+
+        }
+
+        h2{
+            background-color:azure;
+            font-size: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        select{
+          padding: 5px;
+          margin: 5px;
+          border: 1px solid blue;
+          border-radius: 10px;
+        }
+        a,p,b{
+            font-size:20px;
+        }
+        
+        fieldset{
+            background-color:#fff;
+            border-radius:5px;
+            margin-top: 10px;
+            margin-right: 75%;
+            margin-bottom: 0px;
+            margin-left: 1px;
+        }
+        legend{
+            font-size:medium;
+        }
+
+        .btn{
+            width:100%;
+            background-color:green;
+            text-align:center;
+            padding:10px;
+            border-radius:5px;
+            margin:10px;
+            cursor:pointer;
+        }
+        .btn:hover{
+            background-color:blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+    <h1 class="main_header">Payment Form</h1>
+    <hr>
+    <h2>Your Information</h2>
+    <a>Name: *<input type="text" name="urname" placeholder="First name" id="firstname" required></a>
+     <input type="text" name="urname" placeholder="Last name" id="lastname" width="20" required>
+     <fieldset >
+        <legend>Gender</legend>
+        <b>Male</b> <input type="radio" name="gender" id="gender">
+        <b>Female</b> <input type="radio" name="gender" id="gender">
+     </fieldset>
+    <p>Address: *</p> <input type="text" name="address" placeholder="House Name" id="address" required> 
+                <input type="text" name="address" placeholder="Street/area name" id="address" required> 
+                <input type="text" name="address" placeholder="Town and state" id="address"required> 
+    <p>pincode: *<input type="number" name="number" placeholder="areacode" id="number" required> </p>            
+    <p>Date: <input type="date" name="Date" placeholder="XX/XX/XXXX" id="date">  </p>
+    <a>Email: <input type="email" name="email" placeholder="@gmail.com" id="email">
+    <hr>
+    
+    <h2>Card Details</h2>
+    <select name="card_type" id="card_type">
+        <option value=""> Card Type</option>
+       <option value="mastercard">Mastercard</option>
+        <option value="visa">Visa</option>
+        <option value="rupay">Rupay</option>
+    </select>
+    <h3>card number: *<input type="number" name="card_no." placeholder="card number" id="card_ no." required> </h3>
+    <h3>valid through: *<input type="number" id="number" placeholder="mm/yy" name="number" required> </h3>
+    <h3>CVV : *<input type="password" placeholder="cvv" name="protect" required></h3>
+    <button class="btn">Pay Now</button>
+</div>
+</body>
+</html>
